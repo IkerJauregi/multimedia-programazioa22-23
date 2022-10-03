@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_message">Hau mezu bat da.</string>
+    <string name="showToast">Mezua</string>
+    <string name="countUp">Gehitu</string>
+    <string name="clear">Garbitu</string>
+</resources>
