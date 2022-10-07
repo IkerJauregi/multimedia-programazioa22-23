@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ZenbakiaBidali</string>
+    <string name="txtHasierakoa">Hasierako zenbakia</string>
+    <string name="txtJasotakoa">Jasotako zenbakia</string>
+    <string name="btnBidali">Bidali</string>
+    <string name="editTxtZenbakia">Sartu zenbaki bat</string>>
+    <string name="editTxtZenbakiaGehitu">Sartu zenbaki bat gehitzeko</string>
+</resources>
