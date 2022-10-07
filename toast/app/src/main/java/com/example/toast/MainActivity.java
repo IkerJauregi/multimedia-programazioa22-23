@@ -17,6 +17,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         nShowCount = findViewById(R.id.showCount);
+        if(savedInstanceState !=null){
+            if (savedInstanceState.getString("count") != null) {
+                String count = savedInstanceState.getString("count");
+                nShowCount.setText(count);
+            }
+        }
+    }
+    @Override
+    public void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        outState.putString("count", nShowCount.getText().toString());
     }
     public void showToast(View view){
         Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);

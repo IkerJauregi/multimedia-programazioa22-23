@@ -8,77 +8,69 @@
     android:baselineAligned="false"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="724dp"
-        android:layout_height="61dp"
-        tools:layout_conversion_absoluteHeight="118dp"
-        tools:layout_conversion_absoluteWidth="620dp"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="340dp">
-
-        <Button
-            android:id="@+id/clear"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="240dp"
-            android:layout_marginTop="9dp"
-            android:layout_marginBottom="4dp"
-            android:onClick="clear"
-            android:text="@string/clear"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/toast"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_conversion_absoluteHeight="48dp"
-            tools:layout_conversion_absoluteWidth="619dp" />
-
-        <Button
-            android:id="@+id/countUp"
-            android:layout_width="241dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
-            android:layout_marginBottom="4dp"
-            android:onClick="countUp"
-            android:text="@string/countUp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_conversion_absoluteHeight="48dp"
-            tools:layout_conversion_absoluteWidth="309dp" />
-
-        <Button
-            android:id="@+id/toast"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
-            android:layout_marginBottom="4dp"
-            android:onClick="showToast"
-            android:text="@string/showToast"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/clear"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_conversion_absoluteHeight="48dp"
-            tools:layout_conversion_absoluteWidth="309dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <TextView
         android:id="@+id/showCount"
-        android:layout_width="733dp"
-        android:layout_height="334dp"
+        android:layout_width="729dp"
+        android:layout_height="0dp"
         android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
         android:background="#D89A23"
         android:gravity="center"
         android:text="0"
         android:textColor="#3454A5"
         android:textSize="196sp"
+        app:layout_constraintBottom_toTopOf="@+id/clear"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:layout_conversion_absoluteHeight="261dp"
         tools:layout_conversion_absoluteWidth="110dp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:onClick="clear"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toast"
+        app:layout_constraintStart_toEndOf="@+id/countUp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="619dp" />
+
+    <Button
+        android:id="@+id/toast"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:onClick="showToast"
+        android:text="@string/showToast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="309dp" />
+
+    <Button
+        android:id="@+id/countUp"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:onClick="countUp"
+        android:text="@string/countUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/clear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="309dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
