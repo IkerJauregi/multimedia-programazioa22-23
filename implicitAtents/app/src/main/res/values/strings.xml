@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">implicitAntents</string>
+    <string name="edittext_uri"></string>
+    <string name="button_uri">Open Website</string>
+    <string name="edittext_loc"></string>
+    <string name="button_loc">Open Location</string>
+    <string name="edittext_share"></string>
+    <string name="button_share">Share This Text</string>
+    <string name="share_text_with">Sharing this text:</string>
+</resources>
