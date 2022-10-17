@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">activities</string>
+    <string name="app_name">Aktibitateak</string>
+    <string name="izena">Izena</string>
+    <string name="abizena">Abizena</string>
+    <string name="zen1" translatable="false"></string>
+    <string name="zen2" translatable="false"></string>
+    <string name="btnIgon">Igon</string>
 </resources>

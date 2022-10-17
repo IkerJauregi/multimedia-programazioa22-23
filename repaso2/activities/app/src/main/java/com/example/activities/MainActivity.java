@@ -25,16 +25,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String izena = tBoxizena.getText().toString();
                 String abizena = tBoxabizena.getText().toString();
-                int zen1 = Integer.parseInt(tBoxzen1.getText().toString());
-                int zen2 = Integer.parseInt(tBoxzen2.getText().toString());
+                String zen1 = tBoxzen1.getText().toString();
+                String zen2 = tBoxzen2.getText().toString();
 
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-
+                //Guardar los valores de los campos en variables temporales que se enviaran al MainActivity2
                 intent.putExtra("Izena" , izena);
                 intent.putExtra("Abizena" , abizena);
                 intent.putExtra("Zen1" , zen1);
                 intent.putExtra("Zen2" , zen2);
+                //Lanzar el indent
                 startActivity(intent);
+
 
             }
         });

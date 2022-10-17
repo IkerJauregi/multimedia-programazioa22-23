@@ -20,7 +20,7 @@
         android:id="@+id/tvAbizena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/tvIzena"
         app:layout_constraintTop_toBottomOf="@+id/tvIzena" />
@@ -29,7 +29,7 @@
         android:id="@+id/tvZen1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/tvAbizena"
         app:layout_constraintTop_toBottomOf="@+id/tvAbizena" />
@@ -38,8 +38,26 @@
         android:id="@+id/tvZen2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/tvZen1"
         app:layout_constraintTop_toBottomOf="@+id/tvZen1" />
+
+    <TextView
+        android:id="@+id/tvIzenOsoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvZen2"
+        app:layout_constraintTop_toBottomOf="@+id/tvZen2" />
+
+    <TextView
+        android:id="@+id/tvEmaitza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvIzenOsoa"
+        app:layout_constraintTop_toBottomOf="@+id/tvIzenOsoa" />
 </androidx.constraintlayout.widget.ConstraintLayout>

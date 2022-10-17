@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Actividades</string>
+    <string name="izena">Nombre</string>
+    <string name="abizena">Apellido</string>
+    <string name="zen1"></string>
+    <string name="zen2"></string>
+    <string name="btnIgon">Subir</string>
+</resources>
