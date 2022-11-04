@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Button btnGehitu = findViewById(R.id.gehitu);
         Button btnGarbitu = findViewById(R.id.garbitu);
         Button btnMezua = findViewById(R.id.mezua);
@@ -69,4 +71,46 @@ public class MainActivity extends AppCompatActivity {
 //        super.onSaveInstanceState(outState);
 //        outState.putString("count" , kontadorea.getText().toString());
 //    }
+@Override
+public void onStart(){
+    super.onStart();
+    Context context = getApplicationContext();
+    Toast toast = Toast.makeText(context, "onStart", Toast.LENGTH_SHORT);
+    toast.show();
+}
+    @Override
+    public void onRestart() {
+        super.onRestart();
+        Context context = getApplicationContext();
+        Toast toast = Toast.makeText(context, "onRestart", Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        Context context = getApplicationContext();
+        Toast toast = Toast.makeText(context, "onResume", Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        Context context = getApplicationContext();
+        Toast toast = Toast.makeText(context, "onPause", Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    @Override
+    public void onStop() {
+        super.onStop();
+        Context context = getApplicationContext();
+        Toast toast = Toast.makeText(context, "onStop", Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Context context = getApplicationContext();
+        Toast toast = Toast.makeText(context, "onDestroy", Toast.LENGTH_SHORT);
+        toast.show();
+    }
 }

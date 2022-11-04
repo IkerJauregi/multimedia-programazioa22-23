@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">checkbox Default</string>
+    <string name="cbChocolate">Chocolate</string>
+    <string name="cbVainilla">Vainilla</string>
+    <string name="cbFresa">Fresa</string>
+    <string name="btnToast">Mensaje</string>
+</resources>

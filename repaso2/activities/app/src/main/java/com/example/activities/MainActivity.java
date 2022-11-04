@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Zen2" , zen2);
                 //Lanzar el indent
                 startActivity(intent);
-
-
             }
         });
     }

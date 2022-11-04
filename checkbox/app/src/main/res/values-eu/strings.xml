@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Checkbox Euskera</string>
+    <string name="cbChocolate">Txokolatea</string>
+    <string name="cbVainilla">Bainilla</string>
+    <string name="cbFresa">Marrubia</string>
+    <string name="btnToast">Mezua</string>
+</resources>
