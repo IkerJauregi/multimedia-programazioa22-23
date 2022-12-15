@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HegazkinJokoa"
         tools:targetApi="31">
+        <activity android:name=".GameActivity"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
